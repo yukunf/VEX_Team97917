@@ -50,7 +50,7 @@ void move_set_voltage(int forward, int turn) {
 void move_set_speed(int forward, int turn) {
   move_LR_set_speed(forward + turn, forward - turn);
 }
-
+//turns to right if turn >0
 void move(int forward, int turn) {
   move_LR_set_speed(forward + turn, forward - turn);
 }
